@@ -125,10 +125,8 @@ topic_name: "$topics.topic_name",
             name: 1,
             problems_solved: "$codekata_info.problems_solved",
             student_id: "$codekata_info.user_id",
-
-        }
-    }
-])
+        }}
+        ])
 
 7. Find all the mentors with who has the mentee's count more than 15.
 
