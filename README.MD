@@ -1,6 +1,6 @@
 # MongoDB Task 02
 
-1. This task is about desiging database for Zen class programme by using MongoDB.
+1. This task is about designing a database for the Zen class program using MongoDB.
 
 2. For this task we have created, 8 collections.
    1. Students
