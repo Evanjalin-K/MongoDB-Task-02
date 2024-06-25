@@ -1,6 +1,7 @@
 # MongoDB Task 02
 
 1. This task is about desiging database for Zen class programme by using MongoDB.
+
 2. For this task we have created, 8 collections.
    1. Students
    2. codekata
@@ -10,6 +11,8 @@
    6. company_drives
    7. mentors
    8. Participation
+
+Each collection has 20 records in JSON format.
 
 3. Find all the topics and tasks which are thought in the month of October.
 
