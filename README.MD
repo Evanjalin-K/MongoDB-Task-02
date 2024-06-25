@@ -12,7 +12,7 @@
    7. mentors
    8. Participation
 
-Each collection has 20 records in JSON format.
+    Each collection has 20 records in JSON format.
 
 3. Find all the topics and tasks which are thought in the month of October.
 
@@ -160,18 +160,18 @@ topic_name: "$topics.topic_name",
 
      db.attendance.aggregate (
 
-[
-  {
-    $match: {
+      [
+     {
+     $match: {
       date_attended: {
         $gte: "2020-10-15T00:00:00Z",
         $lte: "2020-10-31T23:59:59Z"
       },
       status: "absent"
-    }
-  },
-  {
-    $lookup: {
+         }
+        },
+     {
+     $lookup: {
       from: "tasks",
       let: { student_id: "$student_id" },
       pipeline: [
@@ -183,21 +183,21 @@ topic_name: "$topics.topic_name",
                 { $gte: ["$date", "2020-10-15T00:00:00Z"] },
                 { $lte: ["$date", "2020-10-31T23:59:59Z"] },
                 { $ne: ["$task_status", "Completed"] }
-              ]
-            }
-          }
-        }
-      ],
+               ]
+             }
+           }
+         }
+        ],
       as: "not_completed_tasks"
-    }
-  },
-  {
-    $match: {
+       }
+      },
+      {
+       $match: {
       "not_completed_tasks": { $exists: true, $not: { $size: 0 } }
- }
-  },
- {
-    $count: "The number of users who are absent and task is not submitted between 15 oct-2020 and 31-oct-2020"
-  }
-])
+       }
+       },
+       {
+       $count: "The number of users who are absent and task is not submitted between 15 oct-2020 and 31-oct-2020"
+       }
+       ])
 
