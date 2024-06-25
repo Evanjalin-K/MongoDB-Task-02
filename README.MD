@@ -2,7 +2,7 @@
 
 1. This task is about desiging database for Zen class programme by using MongoDB.
 2. For this task we have created, 8 collections.
-   1. Student
+   1. Students
    2. codekata
    3. attendance
    4. topics
