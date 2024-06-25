@@ -43,13 +43,13 @@ topic_name: "$topics.topic_name",
 }}
 ])
 
-  1. $match: $match in MongoDB lets you filter documents in an aggregation pipeline based on specific conditions, helping to focus on relevant data early in the processing.
+   1. $match: $match in MongoDB lets you filter documents in an aggregation pipeline based on specific conditions, helping to focus on relevant data early in the processing.
 
-  2. $lookup: $lookup in MongoDB is used to perform a left outer join between documents from two collections in the same database. It retrieves documents from another collection and adds them to the current documents as an array. This stage is particularly useful for combining data from multiple collections based on a common field.
+   2. $lookup: $lookup in MongoDB is used to perform a left outer join between documents from two collections in the same database. It retrieves documents from another collection and adds them to the current documents as an array. This stage is particularly useful for combining data from multiple collections based on a common field.
 
-  3. $unwind: $unwind in MongoDB is an aggregation pipeline stage that is used to deconstruct an array field from the input documents to output a document for each element. It essentially flattens an array field, creating multiple documents from a single document that contains arrays, one document for each element of the array. This stage is commonly used when you want to perform operations or further aggregations on elements within an array.
+   3. $unwind: $unwind in MongoDB is an aggregation pipeline stage that is used to deconstruct an array field from the input documents to output a document for each element. It essentially flattens an array field, creating multiple documents from a single document that contains arrays, one document for each element of the array. This stage is commonly used when you want to perform operations or further aggregations on elements within an array.
 
-  4. $project: $project is an aggregation pipeline stage used to reshape documents. It allows you to include, exclude, rename, or create new fields in the output documents.
+    4. $project: $project is an aggregation pipeline stage used to reshape documents. It allows you to include, exclude, rename, or create new fields in the output documents.
 
 4. Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020.
 
@@ -60,7 +60,7 @@ topic_name: "$topics.topic_name",
     }
 })
 
-  1. find(): find() method is used to query documents from a collection. It retrieves documents that match a specified query criteria.
+     1. find(): find() method is used to query documents from a collection. It retrieves documents that match a specified query criteria.
 
 5. Find all the company drives and students who are appeared for the placement.
 
@@ -103,7 +103,7 @@ topic_name: "$topics.topic_name",
      }
      ])
 
-  1. Aggregate: Aggregate operation is used to process data records and return computed results. It is highly flexible and powerful, allowing for complex transformations and aggregations of data within a collection.
+      1. Aggregate: Aggregate operation is used to process data records and return computed results. It is highly flexible and powerful, allowing for complex transformations and aggregations of data within a collection.
 
 6. Find the number of problems solved by the user in codekata.
 
@@ -152,9 +152,9 @@ topic_name: "$topics.topic_name",
       }
     ])
 
-  1. $concat: In MongoDB's aggregation framework, $concat is an operator used to concatenate strings. It allows you to combine multiple strings or expressions into a single string.
+    1. $concat: In MongoDB's aggregation framework, $concat is an operator used to concatenate strings. It allows you to combine multiple strings or expressions into a single string.
 
-  2. $toString: $toString is an expression operator that converts a value to its string representation. It's particularly useful when you need to ensure that a field or an expression within an aggregation pipeline is treated as a string.
+    2. $toString: $toString is an expression operator that converts a value to its string representation. It's particularly useful when you need to ensure that a field or an expression within an aggregation pipeline is treated as a string.
 
 8. Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020.
 
